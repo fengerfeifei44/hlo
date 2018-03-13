@@ -43,6 +43,22 @@
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/datePicker.js"></script>
 <script>
+    $(function () {
+        $("#privacy_policy>span").click(function () {
+
+            $(this).parent("a").siblings(".popupwrapper").show();
+
+        })
+        $("#terms_of_use>span").click(function () {
+
+            $(this).parent("a").siblings(".popupwrapper").show();
+
+        })
+        $(".close").click(function () {
+            $(".popupwrapper").hide()
+        })
+
+    })
     $(function() {
         $( "#myprogressbar" ).progressbar({
             value: 37

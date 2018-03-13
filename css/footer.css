@@ -36,20 +36,21 @@
     margin-left: 12px;
     /*width: 50%;*/
 }
-#footer ul li:first-child {
+#footer>ul>li:first-child {
     border: 0;
-    margin: 0;
+    margin: 1px 0 3px 0;
     padding-left: 0;
 }
 
 
-#footer ul li {
+#footer>ul>li {
     float: left;
     border-left: 1px solid;
     list-style: none;
     color: #555;
-    margin: 0 0 0 8px;
-    padding: 3px 0 3px 8px;
+    margin: 1px 0 5px 8px;
+    padding: 0px 0 0px 8px;
+    line-height: 1;
 }
 #footer ul li a {
     font-family: "Microsoft YaHei", "微软雅黑";

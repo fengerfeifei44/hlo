@@ -20,9 +20,9 @@ input[type=radio],input[type=checkbox]{
 input::-webkit-input-placeholder{
     color: #b8b8b8;
 }
-::-webkit-scrollbar{
+/*::-webkit-scrollbar{
     display:none;
-}
+}*/
 /*颜色*/
 .color_9c{
     color: #9c9c9c;
@@ -128,18 +128,23 @@ input::-webkit-input-placeholder{
 }
 .icon_btn{
     display: inline-block;
-    width: 39px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     vertical-align: middle;
+    border-radius: 50%;
+}
+.icon_btn:hover{
+    box-shadow: 0px 0px 4px 0px
+    rgba(0, 157, 202, 0.15);
 }
 .circle_btn .icon_2{
 
-    background: url("../images/icon.png") -50px -166px;
+    background: url("../images/icon.png") 0px -165px;
 
 }
 .circle_btn .icon_3{
     margin-left: 20px;
-    background: url("../images/icon.png") -50px -215px;
+    background: url("../images/icon.png") 0px -214px;
 
 }
 .progress{
@@ -286,11 +291,11 @@ input::-webkit-input-placeholder{
     display: inline-block;
     margin: 12px 10px 10px 10px;
     width: 23px;
-    height: 25px;
+    height: 26px;
     background: url("../images/icon.png") no-repeat 0 -19px;
 }
 #login form .icon2{
-    background-position: -23px -19px;
+    background-position: -25px -19px;
 }
 #login form .btn{
     margin-top: 26px;
@@ -432,7 +437,7 @@ font-size: 14px;
 
 }
 #problem form .form_btn .continue i{
-    background: url("../images/icon.png") no-repeat -40px -117px;
+    background: url("../images/icon.png") no-repeat -39px -117px;
     margin-left: 19px;
 
 }
@@ -616,10 +621,10 @@ font-size: 14px;
     vertical-align: middle;
 }
 .conclusion_page .conclu_box .data_title .icon_d2{
-    background: url("../images/icon.png") no-repeat -35px -264px;
+    background: url("../images/icon.png") no-repeat -37px -264px;
 }
 .conclusion_page .conclu_box .data_title .icon_d3{
-    background: url("../images/icon.png") no-repeat -70px -264px;
+    background: url("../images/icon.png") no-repeat -74px -264px;
 }
 .conclusion_page .data_group{
     padding: 17px 0 19px 0;
