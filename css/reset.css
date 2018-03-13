@@ -6,7 +6,7 @@ body, div, h1, h2, h3, h4, h5, h6, ul,  li,  p {
 body {
     font:14px  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #333;
-    font-family: MicrosoftYaHei;
+    /*font-family: MicrosoftYaHei;*/
     user-select: none;
 }
 
