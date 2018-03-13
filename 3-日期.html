@@ -27,8 +27,8 @@
         <p class="sentence"><span class="circle"></span>请输入您的出生日期</p>
         <div class="date_picker clear">
             <div  class="year">
-                <p class="value"></p>
-                <ul class="list">
+                <p class="value width60"></p>
+                <ul class="list width60">
                     <li>2018</li>
                     <li>2017</li>
                     <li>2016</li>
@@ -250,9 +250,9 @@
         }
     })
     $(document).click(function(e){
-        var target = e.target;
+        var target = $(e.target);
         console.log(target)
-        if(target.className=="value"){
+        if(target.hasClass('value')){
            console.log(1)
         } else {
             console.log(2)
