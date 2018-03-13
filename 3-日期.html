@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>HLO</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hlo.css">
+    <link rel="stylesheet" href="css/date.css">
+</head>
+<body id="problem">
+<div class="aa" style="float: right;background: red">下一页</div>
+<div id="box" class="problem_page clear">
+    <div class="problem_title">我的健康评估</div>
+    <div class="circle_btn"><span class="icon_1">重新开始</span><i class="icon_2 icon_btn"></i></div>
+    <div class="progress clear">
+        <span class="">评估进度</span>
+        <div id="myprogressbar"></div>
+        <span>37%</span>
+    </div>
+    <p class="time">整个健康评估需要花费10-15分钟完成</p>
+    <form action="">
+        <p class="sentence"><span class="circle"></span>请输入您的出生日期</p>
+        <div class="date_picker clear">
+            <div  class="year">
+                <p class="value"></p>
+                <ul class="list">
+                    <li>2018</li>
+                    <li>2017</li>
+                    <li>2016</li>
+                    <li>2015</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                    <li>2012</li>
+                    <li>2011</li>
+                    <li>2010</li>
+                    <li>2009</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                    <li>2018</li>
+                    <li>2017</li>
+                    <li>2016</li>
+                    <li>2015</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                </ul>
+
+            </div>
+            <div class="font">年</div>
+            <div  class="month">
+                <p  class="value"></p>
+                <ul class="list">
+                    <li>01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li>04</li>
+                    <li>05</li>
+                    <li>06</li>
+                    <li>07</li>
+                    <li>08</li>
+                    <li>09</li>
+                    <li>11</li>
+                    <li>12</li>
+
+                </ul>
+            </div>
+            <div class="font">月</div>
+            <div  class="day">
+                <p class="value"></p>
+                <ul class="list" >
+                    <li>01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li>04</li>
+                    <li>05</li>
+                    <li>06</li>
+                    <li>07</li>
+                    <li>08</li>
+                    <li>09</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+            </div>
+            <div class="font">日</div>
+      <!--  <select class="other"  id="date-sel-year" rel=" 2015"></select> <span>年</span>
+        <select id="date-sel-month" rel="1 "></select> <span>月</span>
+        <select id="date-sel-day" rel="1 "></select> <span>日</span>-->
+        </div>
+
+        <div class="form_btn">
+            <div class="back"><i class="icon_btn"></i><span>返回</span></div>
+            <div class="continue"> <span>继续</span> <i class="icon_btn"></i></div>
+        </div>
+    </form>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!--<script src="js/datePicker1.js"></script>-->
+<script>
+    function strLi() {
+        var val="";
+        var str=" <li>+val+</li>"
+    }
+    $(function() {
+        $( "#myprogressbar" ).progressbar({
+            value: 37
+        });
+    });
+    (function($){
+        $.extend({
+            date_picker: function(options){
+                var defaults = {
+                    YearSelector: "#sel_year",
+                    MonthSelector: "#sel_month",
+                    DaySelector: "#sel_day",
+                    FirstText: " ",
+                    FirstValue: 0
+                };
+                var opts = $.extend({}, defaults, options);
+                var $YearSelector = $(opts.YearSelector);
+                var $MonthSelector = $(opts.MonthSelector);
+                var $DaySelector = $(opts.DaySelector);
+                var FirstText = opts.FirstText;
+                var FirstValue = opts.FirstValue;
+
+                // 初始化
+
+                var str = "<option value=\"" + FirstValue + "\">" + FirstText + "</option>";
+                $YearSelector.html(str);
+                $MonthSelector.html(str);
+                $DaySelector.html(str);
+
+                // 年份列表
+                var yearNow = new Date().getFullYear();
+                var yearSel = $YearSelector.attr("rel");
+                for (var i = yearNow; i >= 1900; i--) {
+                    var sed = yearSel==i?"selected":"";
+                    var yearStr = "<option value=\"" + i + "\" " + sed+">" + i + "</option>";
+                    $YearSelector.append(yearStr);
+                }
+
+                // 月份列表
+                var monthSel = $MonthSelector.attr("rel");
+                for (var i = 1; i <= 12; i++) {
+                    var sed = monthSel==i?"selected":"";
+                    var monthStr = "<option value=\"" + i + "\" "+sed+">" + i + "</option>";
+                    $MonthSelector.append(monthStr);
+                }
+
+                // 日列表(仅当选择了年月)
+                function BuildDay() {
+                    if ($YearSelector.val() == 0 || $MonthSelector.val() == 0) {
+                        // 未选择年份或者月份
+                        $DaySelector.html(str);
+                    } else {
+                        $DaySelector.html(str);
+                        var year = parseInt($YearSelector.val());
+                        var month = parseInt($MonthSelector.val());
+                        var dayCount = 0;
+                        switch (month) {
+                            case 1:
+                            case 3:
+                            case 5:
+                            case 7:
+                            case 8:
+                            case 10:
+                            case 12:
+                                dayCount = 31;
+                                break;
+                            case 4:
+                            case 6:
+                            case 9:
+                            case 11:
+                                dayCount = 30;
+                                break;
+                            case 2:
+                                dayCount = 28;
+                                if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+                                    dayCount = 29;
+                                }
+                                break;
+                            default:
+                                break;
+                        }
+
+                        var daySel = $DaySelector.attr("rel");
+                        for (var i = 1; i <= dayCount; i++) {
+                            var sed = daySel==i?"selected":"";
+                            var dayStr = "<option value=\"" + i + "\" "+sed+">" + i + "</option>";
+                            $DaySelector.append(dayStr);
+                        }
+                    }
+                }
+                $MonthSelector.change(function () {
+                    BuildDay();
+                });
+                $YearSelector.change(function () {
+                    BuildDay();
+                });
+                if($DaySelector.attr("rel")!=""){
+                    BuildDay();
+                }
+            }
+        });
+    })(jQuery);
+        $.date_picker({
+            YearSelector:  "#date-sel-year",
+            MonthSelector: "#date-sel-month",
+            DaySelector:   "#date-sel-day"
+        });
+       $(".date_picker select").click(function () {
+           $(this).css("background","#fff")
+       })
+    $('.date_picker .value').click(function () {
+        $('.list').hide()
+        $(this).siblings('ul').show()
+       /* $(".year_list").show();*/
+    })
+    $('.list li').click(function (event) {
+
+        $(this).parent().siblings(".value").html($(this).html())
+        $(this).parent().hide();
+        var value=$(this).parent().siblings(".value").html();
+        if(value){
+            $(this).parent().siblings(".value").css("background","#fff")
+        }
+    })
+    $(document).click(function(e){
+        var target = e.target;
+        console.log(target)
+        if(target.className=="value"){
+           console.log(1)
+        } else {
+            console.log(2)
+            $('.list').hide()
+        }
+
+
+    });
+
+    /* $(".year input").focus(function () {
+         $(".year_list").show();
+         $('.year_list li').click(function () {
+             $('.year input').val($(this).html())
+            $('.year_list').hide()
+         })
+
+     })*/
+
+
+    $('.aa').click(function () {
+        window.location.href="4-性别.html"
+    })
+
+</script>
+</body>
+</html>

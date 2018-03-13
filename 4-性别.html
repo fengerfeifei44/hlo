@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>HLO</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hlo.css">
+</head>
+<body id="problem">
+<div class="aa" style="float: right;background: red">下一页</div>
+<div id="box" class="problem_page clear">
+    <div class="problem_title">我的健康评估</div>
+    <div class="circle_btn"><span class="icon_1">重新开始</span><i class="icon_2 icon_btn"></i></div>
+    <div class="progress clear">
+        <span class="">评估进度</span>
+        <div id="myprogressbar"></div>
+        <span>37%</span>
+    </div>
+    <p class="time">整个健康评估需要花费10-15分钟完成</p>
+    <form action="">
+
+
+        <p class="sentence"><span class="circle"></span>请选择您的性别<span class="grey"></span></p>
+        <p class="input"><input type="radio" name="sex" id="boy">
+            <label for="boy">男</label></p>
+        <p class="input"> <input type="radio" name="sex" id="girl">
+            <label for="girl">女</label></p>
+
+
+        <div class="form_btn">
+            <div class="back"><i class="icon_btn"></i><span>返回</span></div>
+            <div class="continue"> <span>继续</span> <i class="icon_btn"></i></div>
+        </div>
+    </form>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/datePicker.js"></script>
+<script>
+    $(function() {
+        $( "#myprogressbar" ).progressbar({
+            value: 37
+        });
+    });
+
+        $.date_picker({
+            YearSelector:  "#date-sel-year",
+            MonthSelector: "#date-sel-month",
+            DaySelector:   "#date-sel-day"
+        });
+       $(".date_picker select").click(function () {
+           $(this).css("background","#fff")
+       })
+    $(function() {
+        $( ".slider" ).slider({
+            range: "max",
+            min: 0,
+            max: 10,
+            value: 0,
+            slide: function( event, ui ) {
+                $( "#amount" ).val( ui.value );
+                $( "#amount" ).css( "left",70*(ui.value) );
+
+            }
+        });
+
+        $( "#amount" ).val( $( ".slider" ).slider( "value" ) );
+    });
+    $('input:checked').next('label').addClass('on');
+    $('input.know:checked').next('label').addClass('select');
+    $(document.body).on('click', function(){
+        $('body').find('input[type=radio]').each(function(i){
+            if($(this).prop('checked')){
+                $(this).next().addClass("on")
+
+            }else{
+                $(this).next().removeClass("on")
+
+            }
+        });
+    });
+    $(document.body).on('click', function(){
+        $('body').find('input[type=checkbox]').each(function(i){
+            if($(this).prop('checked')){
+                $(this).next().addClass("on")
+            }else{
+                $(this).next().removeClass("on")
+            }
+        });
+    });
+    $(document.body).on('click', function(){
+        $('body').find('.weight_group input[type=radio]').each(function(i){
+            if($(this).prop('checked')){
+                $(this).parent().addClass("on")
+
+            }else{
+                $(this).parent().removeClass("on")
+
+            }
+        });
+    });
+    $(document.body).on('click', function(){
+        $('body').find('.mm.know').each(function(i){
+            if($(this).prev().prop('checked')){
+                $(this).addClass("select")
+                $(this).siblings("input[type=text]").val("");
+            }else{
+                $(this).removeClass("select")
+            }
+        });
+    });
+    $(".weight_group input[type=text]").focus(function () {
+        $(this).css("background","#fff")
+
+    })
+    $(".weight_group input[type=text]").blur(function () {
+        if($(this).val()){
+            console.log(1)
+            $(this).siblings("input[type=radio]").attr("checked",false);
+        }else {
+            $(this).css("background","#f4f4f4")
+        }
+
+    })
+    $('.aa').click(function () {
+        window.location.href="5-问诊.html"
+    })
+   /* $.ms_DatePicker();*/
+</script>
+</body>
+</html>
