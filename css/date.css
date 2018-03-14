@@ -29,9 +29,10 @@
     text-align: center;
     max-height: 346px;
     border: solid 1px #ebebeb;
-    overflow: auto;
+    overflow:hidden;
     z-index: 1000;
 }
+
 .date_picker .list.width60{
     width: 60px;
 }

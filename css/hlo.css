@@ -20,9 +20,9 @@ input[type=radio],input[type=checkbox]{
 input::-webkit-input-placeholder{
     color: #b8b8b8;
 }
-/*::-webkit-scrollbar{
+::-webkit-scrollbar{
     display:none;
-}*/
+}
 /*颜色*/
 .color_9c{
     color: #9c9c9c;
@@ -125,6 +125,7 @@ input::-webkit-input-placeholder{
     margin-right: 19px;
     font-size: 18px;
     color: #009eca;
+    font-family: "Microsoft YaHei" !important;
 }
 .icon_btn{
     display: inline-block;
@@ -140,11 +141,13 @@ input::-webkit-input-placeholder{
 .circle_btn .icon_2{
 
     background: url("../images/icon.png") 0px -165px;
+    background-size: 189px;
 
 }
 .circle_btn .icon_3{
     margin-left: 20px;
     background: url("../images/icon.png") 0px -214px;
+    background-size: 189px;
 
 }
 .progress{
@@ -293,6 +296,7 @@ input::-webkit-input-placeholder{
     width: 23px;
     height: 26px;
     background: url("../images/icon.png") no-repeat 0 -19px;
+    background-size: 189px;
 }
 #login form .icon2{
     background-position: -25px -19px;
@@ -367,7 +371,7 @@ input::-webkit-input-placeholder{
 #slider{
     margin-left: 20px;
 }
-#slider .slider{
+#slider .slider,#slider .slider1{
     margin-top: 30px;
 
     position: relative;
@@ -384,7 +388,7 @@ input::-webkit-input-placeholder{
 #slider .slider_value>span>span{
 font-size: 14px;
 }
-#amount{
+#amount,#amount1{
     border:0;
     color:#f6931f;
     font-size: 14px;
@@ -433,13 +437,14 @@ font-size: 14px;
 #problem form .form_btn .back i{
     background: url("../images/icon.png") no-repeat 0 -117px;
     margin-right: 19px;
+    background-size: 189px;
 
 
 }
 #problem form .form_btn .continue i{
     background: url("../images/icon.png") no-repeat -39px -117px;
     margin-left: 19px;
-
+    background-size: 189px;
 }
 #problem form .date_picker{
 
@@ -594,6 +599,7 @@ font-size: 14px;
     width: 26px;
     height: 40px;
     background: url("../images/icon.png") no-repeat -19px -330px;
+    background-size: 189px;
 }
 .conclusion_page .complete>p{
     float: right;
@@ -619,12 +625,15 @@ font-size: 14px;
     height: 43px;
     background: url("../images/icon.png") no-repeat 0 -264px;
     vertical-align: middle;
+    background-size: 189px;
 }
 .conclusion_page .conclu_box .data_title .icon_d2{
     background: url("../images/icon.png") no-repeat -37px -264px;
+    background-size: 189px;
 }
 .conclusion_page .conclu_box .data_title .icon_d3{
     background: url("../images/icon.png") no-repeat -74px -264px;
+    background-size: 189px;
 }
 .conclusion_page .data_group{
     padding: 17px 0 19px 0;
@@ -653,6 +662,7 @@ font-size: 14px;
     height: 24px;
    background: url("../images/icon.png") no-repeat;
     vertical-align: middle;
+    background-size: 189px;
 }
 .conclusion_page .two.green{
     color: #00c92f;

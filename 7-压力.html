@@ -36,7 +36,17 @@
                 <span class="right font_18 color_44">10.0<span class="color_9c">（压力水平高）</span> </span>
             </div>
         </div>
+        <p class="sentence"><span class="circle"></span>您会给自己目前的压力水平打多少分？</p>
+        <div id="slider">
+            <div class="slider1">
+                <input type="text" id="amount1" style="left:280px">
 
+            </div>
+            <div class="slider_value">
+                <span class="left font_18 color_44">0.0<span class="color_9c">（压力水平低）</span> </span>
+                <span class="right font_18 color_44">10.0<span class="color_9c">（压力水平高）</span> </span>
+            </div>
+        </div>
 
         <div class="form_btn">
             <div class="back"><i class="icon_btn"></i><span>返回</span></div>
@@ -185,6 +195,21 @@
        $(".date_picker select").click(function () {
            $(this).css("background","#fff")
        })
+    $(function() {
+        $( ".slider1" ).slider({
+            range: "max",
+            min: 0,
+            max: 10,
+            value: 4,
+            slide: function( event, ui ) {
+                $( "#amount1" ).val( ui.value );
+                $( "#amount1" ).css( "left",70*(ui.value) );
+
+            }
+        });
+
+        $( "#amount1" ).val( $( ".slider1" ).slider( "value" ) );
+    });
     $(function() {
         $( ".slider" ).slider({
             range: "max",
