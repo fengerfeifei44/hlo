@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/hlo.css">
+    <link rel="stylesheet" href="css/date.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body id="problem">
@@ -24,61 +25,96 @@
     </div>
     <p class="time">整个健康评估需要花费10-15分钟完成</p>
     <form action="">
-
-
-
-        <div class="food">
-            <div class="food_group">
-                <p class="sentence"><span class="circle"></span>最近查的总胆固醇是多少？</p>
-
-                <div  class="weight_group">
-                    <p class="detail">总胆固醇是血液中胆固醇含量的总和。总胆固醇检查是全面的血脂检查（又称血脂全套活血脂分析）的一部分</p>
-                    <input type="text"><label class="mm">mmol/L</label><input type="radio" id="know" ><label class="mm know " for="know">不知道</label>
-
-
-
+        <p class="sentence"><span class="circle"></span>请输入您的出生日期</p>
+        <div class="date_picker clear">
+            <div  class="year">
+                <p class="value width60"></p>
+                <div class="parent width60">
+                    <ul class="list width60">
+                        <!-- <li>2018</li>
+                         <li>2017</li>
+                         <li>2016</li>
+                         <li>2015</li>
+                         <li>2014</li>
+                         <li>2013</li>
+                         <li>2012</li>
+                         <li>2011</li>
+                         <li>2010</li>
+                         <li>2009</li>
+                         <li>2014</li>
+                         <li>2013</li>
+                         <li>2018</li>
+                         <li>2017</li>
+                         <li>2016</li>
+                         <li>2015</li>
+                         <li>2014</li>
+                         <li>2013</li>-->
+                    </ul>
                 </div>
 
             </div>
-            <div class="food_group">
-                <p class="sentence"><span class="circle"></span>最近查的低密度脂蛋白（LDL）胆固醇是多少？</p>
+            <div class="font">年</div>
+            <div  class="month">
+                <p  class="value"></p>
+                <div class="parent">
+                    <ul class="list">
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                        <li>05</li>
+                        <li>06</li>
+                        <li>07</li>
+                        <li>08</li>
+                        <li>09</li>
+                        <li>11</li>
+                        <li>12</li>
 
-                <div  class="weight_group">
-                    <p class="detail">由于低密度脂蛋白（LDL）胆固醇过多可导致脂质在动脉中沉积，所以LDL胆固醇有时被称为“坏”胆固醇</p>
-                    <input type="text"><label class="mm">mmol/L</label><input type="radio" id="know3" ><label class="mm know " for="know3">不知道</label>
-
-
-
+                    </ul>
                 </div>
-
             </div>
-
-
-            <div class="food_group">
-                <p class="sentence"><span class="circle"></span>最近查的高密度脂蛋白（LDL）胆固醇是多少？</p>
-
-                <div  class="weight_group">
-                    <p class="detail">由于高密度脂蛋白（HDL）胆固醇有助于预防动脉堵塞，所以HDL胆固醇有时被称为“好”胆固醇</p>
-                    <input type="text"><label class="mm">mmol/L</label><input type="radio" id="know1" ><label class="mm know " for="know1">不知道</label>
-
-
-
+            <div class="font">月</div>
+            <div  class="day">
+                <p class="value"></p>
+                <div class="parent">
+                    <ul class="list" >
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                        <li>05</li>
+                        <li>06</li>
+                        <li>07</li>
+                        <li>08</li>
+                        <li>09</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
                 </div>
-
             </div>
-            <div class="food_group">
-                <p class="sentence"><span class="circle"></span>最近查的甘油三酯是多少？</p>
+            <div class="font">日</div>
 
-                <div  class="weight_group">
-                    <p class="detail">甘油三酯是血液中的一类脂肪，储存于脂肪细胞中</p>
-                    <input type="text"><label class="mm">mmol/L</label><input type="radio" id="know2" ><label class="mm know " for="know2">不知道</label>
-
-
-
-                </div>
-
-            </div>
         </div>
+
         <div class="form_btn">
             <div class="back"><i class="icon_btn"></i><span>返回</span></div>
             <div class="continue"> <span>继续</span> <i class="icon_btn"></i></div>
@@ -194,7 +230,7 @@
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.min.js"></script>
-<script src="js/datePicker.js"></script>
+<!--<script src="js/datePicker1.js"></script>-->
 <script>
     $(function () {
         $("#privacy_policy>span").click(function () {
@@ -212,88 +248,67 @@
         })
 
     })
+        function strLi() {
+            var str="";
+            for(var i=2018;i>=1900;i--){
+
+                 str=" <li>"+i+"</li>"
+                $('.year .list').append(str);
+            }
+        }
+        strLi();
+
+
+
+
     $(function() {
         $( "#myprogressbar" ).progressbar({
             value: 37
         });
     });
 
-
-    $(function() {
-        $( ".slider" ).slider({
-            range: "max",
-            min: 0,
-            max: 10,
-            value: 0,
-            slide: function( event, ui ) {
-                $( "#amount" ).val( ui.value );
-                $( "#amount" ).css( "left",70*(ui.value) );
-
-            }
-        });
-
-        $( "#amount" ).val( $( ".slider" ).slider( "value" ) );
-    });
-    $('input:checked').next('label').addClass('on');
-    $('input.know:checked').next('label').addClass('select');
-    $(document.body).on('click', function(){
-        $('body').find('input[type=radio]').each(function(i){
-            if($(this).prop('checked')){
-                $(this).next().addClass("on")
-
-            }else{
-                $(this).next().removeClass("on")
-
-            }
-        });
-    });
-    $(document.body).on('click', function(){
-        $('body').find('input[type=checkbox]').each(function(i){
-            if($(this).prop('checked')){
-                $(this).next().addClass("on")
-            }else{
-                $(this).next().removeClass("on")
-            }
-        });
-    });
-    $(document.body).on('click', function(){
-        $('body').find('.weight_group input[type=radio]').each(function(i){
-            if($(this).prop('checked')){
-                $(this).parent().addClass("on")
-
-            }else{
-                $(this).parent().removeClass("on")
-
-            }
-        });
-    });
-    $(document.body).on('click', function(){
-        $('body').find('.mm.know').each(function(i){
-            if($(this).prev().prop('checked')){
-                $(this).addClass("select")
-                $(this).siblings("input[type=text]").val("");
-            }else{
-                $(this).removeClass("select")
-            }
-        });
-    });
-    $(".weight_group input[type=text]").focus(function () {
-        $(this).css("background","#fff")
-
+    $('.date_picker .value').click(function () {
+        $('.parent ').hide()
+        $(this).siblings('.parent').show()
+       /* $(".year_list").show();*/
     })
-    $(".weight_group input[type=text]").blur(function () {
-        if($(this).val()){
 
-            $(this).siblings("input[type=radio]").attr("checked",false);
-        }else {
-            $(this).css("background","#f4f4f4")
+    $('.list li').click(function (event) {
+
+        $(this).parent().parent().siblings(".value").html($(this).html())
+        $(this).parent().parent().hide();
+        var value=$(this).parent().parent().siblings(".value").html();
+        if(value){
+            $(this).parent().parent().siblings(".value").css("background","#fff")
+        }
+    })
+    $(document).click(function(e){
+        var target = $(e.target);
+
+        if(target.hasClass('value')){
+
+        } else {
+
+            $('.parent').hide()
         }
 
-    })
+
+    });
+
+    /* $(".year input").focus(function () {
+         $(".year_list").show();
+         $('.year_list li').click(function () {
+             $('.year input').val($(this).html())
+            $('.year_list').hide()
+         })
+
+     })*/
+
+
     $('.aa').click(function () {
-        window.location.href="9.html"
+        window.location.href="4-性别.html"
     })
-   /* $.ms_DatePicker();*/
+
 </script>
 </body>
 </html>

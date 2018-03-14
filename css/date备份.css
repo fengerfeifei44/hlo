@@ -20,23 +20,15 @@
 .date_picker .value.width60{
     width: 60px;
 }
-.width60{
-    width: 60px !important;
-}
-.date_picker .parent{
+.date_picker .list{
+
+    padding: 8px 0;
     display: none;
     position: absolute;
     width: 40px;
-    overflow: hidden;
-    border: solid 1px #ebebeb;
-}
-.date_picker .list{
-    padding: 8px 10px;
-  /*  display: block;*/
-    width: 40px;
     text-align: center;
     max-height: 346px;
-
+    border: solid 1px #ebebeb;
     overflow:auto;
     z-index: 1000;
 }

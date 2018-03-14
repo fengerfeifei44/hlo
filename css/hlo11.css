@@ -4,6 +4,46 @@ body{
     background-size: 100% auto;
 
 }
+body, div, h1, h2, h3, h4, h5, h6, ul,  li,  p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-family: "Microsoft YaHei", "微软雅黑"!important;
+
+
+    user-select: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: 500;
+}*/
+
+img {
+    vertical-align: top;
+    border: none;
+}
+img, input, select, textarea {
+    vertical-align: top;
+    outline: none;
+}
+
+.clear {
+    zoom: 1;
+}
+.clear:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/*::-webkit-scrollbar{width:1px;}*/
+/*以上为重置样式*/
 #box{
     position: relative;
     min-height: 930px;
@@ -20,9 +60,9 @@ input[type=radio],input[type=checkbox]{
 input::-webkit-input-placeholder{
     color: #b8b8b8;
 }
-/*::-webkit-scrollbar{
+::-webkit-scrollbar{
     display:none;
-}*/
+}
 /*颜色*/
 .color_9c{
     color: #9c9c9c;
@@ -125,7 +165,6 @@ input::-webkit-input-placeholder{
     margin-right: 19px;
     font-size: 18px;
     color: #009eca;
-    font-family: "Microsoft YaHei" !important;
 }
 .icon_btn{
     display: inline-block;
@@ -141,13 +180,11 @@ input::-webkit-input-placeholder{
 .circle_btn .icon_2{
 
     background: url("../images/icon.png") 0px -165px;
-    background-size: 189px;
 
 }
 .circle_btn .icon_3{
     margin-left: 20px;
     background: url("../images/icon.png") 0px -214px;
-    background-size: 189px;
 
 }
 .progress{
@@ -296,7 +333,6 @@ input::-webkit-input-placeholder{
     width: 23px;
     height: 26px;
     background: url("../images/icon.png") no-repeat 0 -19px;
-    background-size: 189px;
 }
 #login form .icon2{
     background-position: -25px -19px;
@@ -368,25 +404,14 @@ input::-webkit-input-placeholder{
     color: #9c9c9c;
 }
 /*#problem 问题页*/
-#slider .ui-widget.ui-widget-content{
-    border: 1px solid #fff;
-}
 #slider{
-    padding-bottom: 27px;
-    border-bottom: 1px solid #ececec;
+    margin-left: 20px;
 }
-#slider .slider,#slider .slider1{
+#slider .slider{
     margin-top: 30px;
 
     position: relative;
     width: 700px;
-
-}
-#slider .copy{
-    float: right;
-    width:6px;
-    height: 13px;
-    background: #fff;
 
 }
 #slider .slider_value{
@@ -399,7 +424,7 @@ input::-webkit-input-placeholder{
 #slider .slider_value>span>span{
 font-size: 14px;
 }
-#amount,#amount1{
+#amount{
     border:0;
     color:#f6931f;
     font-size: 14px;
@@ -448,14 +473,13 @@ font-size: 14px;
 #problem form .form_btn .back i{
     background: url("../images/icon.png") no-repeat 0 -117px;
     margin-right: 19px;
-    background-size: 189px;
 
 
 }
 #problem form .form_btn .continue i{
     background: url("../images/icon.png") no-repeat -39px -117px;
     margin-left: 19px;
-    background-size: 189px;
+
 }
 #problem form .date_picker{
 
@@ -508,19 +532,15 @@ font-size: 14px;
 }
 #problem form  input[type=radio]+label{
     background: url("../images/radio_not.png") no-repeat 0 2px;
-    background-size: 20px ;
 }
 #problem form  input[type=checkbox]+label{
     background: url("../images/chek_not.png") no-repeat 0 2px;
-    background-size: 20px ;
 }
 #problem form  input[type=radio]+label.on{
     background: url("../images/radio_on.png") no-repeat 0 2px;
-    background-size: 20px ;
 }
 #problem form  input[type=checkbox]+label.on{
     background: url("../images/chek_on.png") no-repeat 0 2px;
-    background-size: 20px ;
 }
 #problem form .food .food_answer{
     margin: 27px 0;
@@ -585,11 +605,9 @@ font-size: 14px;
     margin-left: 40px;
     padding-left: 30px;
     background: url("../images/radio_not.png") no-repeat 0 4px;
-    background-size: 20px;
 }
 #problem form .food .food_group .weight_group .mm.know.select{
     background: url("../images/radio_on.png") no-repeat 0 4px;
-    background-size: 20px;
 }
 #problem form .food .food_group .weight_group .mm.know.on{
     color: #444444;
@@ -616,7 +634,6 @@ font-size: 14px;
     width: 26px;
     height: 40px;
     background: url("../images/icon.png") no-repeat -19px -330px;
-    background-size: 189px;
 }
 .conclusion_page .complete>p{
     float: right;
@@ -642,15 +659,12 @@ font-size: 14px;
     height: 43px;
     background: url("../images/icon.png") no-repeat 0 -264px;
     vertical-align: middle;
-    background-size: 189px;
 }
 .conclusion_page .conclu_box .data_title .icon_d2{
     background: url("../images/icon.png") no-repeat -37px -264px;
-    background-size: 189px;
 }
 .conclusion_page .conclu_box .data_title .icon_d3{
     background: url("../images/icon.png") no-repeat -74px -264px;
-    background-size: 189px;
 }
 .conclusion_page .data_group{
     padding: 17px 0 19px 0;
@@ -679,7 +693,6 @@ font-size: 14px;
     height: 24px;
    background: url("../images/icon.png") no-repeat;
     vertical-align: middle;
-    background-size: 189px;
 }
 .conclusion_page .two.green{
     color: #00c92f;
