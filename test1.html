@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer-container,.content {
+            width: 200px; height: 200px;
+            background: red;
+        }
+        .outer-container {
+            width: 200px; height: 200px;
+            background: red;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .inner-container {
+            position: absolute; left: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            background: green;
+        }
+        .content{
+            width: 200px; height: 200px;
+            background: red;
+        }
+        /* for Chrome */
+        .inner-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="outer-container">
+    <div class="inner-container">
+        <div class="content">
+            如果是用javascript 自动(连续)滚动的话. 本来就不需要滚动条.
+            如果你想不要滚动条,还要响应用户鼠标滚动的话.
+            可以试试用2层DIV. 外面那层写个固定的width 和height,overfllow:Hidden;  然后里面的那个也需要固定的width(约宽于父DIV的宽度.——把滚动条顶出去Hidden掉)和height(同父级DIV).overfllow:auto;.这样应该可以吧.
+            但是这样用户看不到滚动条.如果不是JS自动滚动的话.那么用户根本就不知道你这里面的内容会滚动.适得其反了如果是用javascript 自动(连续)滚动的话. 本来就不需要滚动条.
+            如果你想不要滚动条,还要响应用户鼠标滚动的话.
+            可以试试用2层DIV. 外面那层写个固定的width 和height,overfllow:Hidden;  然后里面的那个也需要固定的width(约宽于父DIV的宽度.——把滚动条顶出去Hidden掉)和height(同父级DIV).overfllow:auto;.这样应该可以吧.
+            但是这样用户看不到滚动条.如果不是JS自动滚动的话.那么用户根本就不知道你这里面的内容会滚动.适得其反了
+        </div>
+    </div>
+</div>
+</body>
+</html>

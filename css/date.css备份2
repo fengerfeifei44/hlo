@@ -29,38 +29,26 @@
     width: 40px;
     overflow: hidden;
     border: solid 1px #ebebeb;
-    height: 346px;
-}
-.date_picker .center{
-    position: absolute;
-    left: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 .date_picker .list{
-
-    /*padding: 8px 10px;*/
-
+    padding: 8px 10px;
+    display: block;
     width: 40px;
    /* text-align: center;*/
-    height: 346px;
+    max-height: 346px;
 
-
-
+    overflow:auto;
+    z-index: 1000;
 }
-/*
 .date_picker .list:hover{
     overflow: auto;
 }
-*/
-
+.date_picker .list.width60{
+    width: 60px;
+}
 .date_picker .list li{
-    text-align: center;
     padding: 8px 0;
     cursor: pointer;
-}
-.date_picker .list.width60 li{
-    width: 60px;
 }
 .date_picker .list li:hover{
     color: #009eca;

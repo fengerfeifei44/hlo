@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        li{
+            text-align: center;
+        }
+        .outer-container,.content {
+            width: 60px; height: 200px;
+            background: red;
+        }
+        .outer-container {
+            width: 60px; height: 200px;
+            background: red;
+            position: absolute;
+            overflow: hidden;
+
+        }
+        .inner-container {
+            position: absolute;
+            left: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            background: green;
+        }
+        .content{
+            width: 60px; height: 200px;
+            background: red;
+        }
+        /* for Chrome */
+        .inner-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="outer-container">
+    <div class="inner-container">
+        <ul class="content">
+           <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+            <li>2018</li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
