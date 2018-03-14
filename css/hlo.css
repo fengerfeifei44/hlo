@@ -509,6 +509,7 @@ font-size: 14px;
 #problem form  input[type=radio]+label{
     background: url("../images/radio_not.png") no-repeat 0 2px;
     background-size: 20px ;
+
 }
 #problem form  input[type=checkbox]+label{
     background: url("../images/chek_not.png") no-repeat 0 2px;
