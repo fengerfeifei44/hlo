@@ -29,7 +29,7 @@
     text-align: center;
     max-height: 346px;
     border: solid 1px #ebebeb;
-    overflow:hidden;
+    overflow:auto;
     z-index: 1000;
 }
 
