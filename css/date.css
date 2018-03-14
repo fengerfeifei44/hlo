@@ -32,9 +32,9 @@
 }
 .date_picker .list{
     padding: 8px 10px;
-  /*  display: block;*/
+    display: block;
     width: 40px;
-    text-align: center;
+   /* text-align: center;*/
     max-height: 346px;
 
     overflow:auto;
