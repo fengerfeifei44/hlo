@@ -6,7 +6,7 @@ body{
 }
 #box{
     position: relative;
-    min-height: 930px;
+   /* min-height: 930px;*/
     box-sizing: border-box;
     margin: 74px auto 30px;
     width: 1200px;
@@ -24,6 +24,7 @@ input::-webkit-input-placeholder{
     display:none;
 }*/
 /*颜色*/
+
 .color_9c{
     color: #9c9c9c;
 }
@@ -223,14 +224,15 @@ input::-webkit-input-placeholder{
     float: right;
 }
 #login .loginPage{
-    padding: 205px 66px 165px 108px;
+    width: 1100px;
+    padding: 60px 40px 40px;
 }
 #login .pull-left>img{
-    margin-top: 50px;
-    margin-left: 70px;
+    /*margin-top: 30px;*/
+
 }
 #login .introduce{
-    margin-top: 10px;
+  /*  margin-top: 10px;*/
     font-size: 20px;
     color: #009eca;
     text-align: center;
@@ -323,6 +325,7 @@ input::-webkit-input-placeholder{
 /*#start 介绍说明页*/
 #start .start_page{
     padding: 131px 71px 71px 90px;
+    padding-bottom: 150px!important;
 }
 #start .start_page.end_page{
     padding:0;
@@ -500,6 +503,11 @@ font-size: 14px;
     margin-left: 51px;
     margin-bottom: 16px;
 }
+
+#problem form p.input:last-of-type{
+    margin-bottom: 0px;
+}
+
 /*#problem form .input input{
     display: none;
 }*/
@@ -628,13 +636,14 @@ font-size: 14px;
 }
 .conclusion_page .conclu_box{
     box-sizing: border-box;
-    padding: 32px 60px 80px 40px;
+    padding: 32px 60px 13px 40px;
     width: 1120px;
     border: solid 1px #ececec;
 }
 .conclusion_page .conclu_box .data_title{
     font-size: 28px;
     color: #009eca;
+    margin-left: -18px;
 }
 .conclusion_page .conclu_box .data_title .icon_d{
     margin-right: 14px;
