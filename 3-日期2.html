@@ -44,16 +44,13 @@
 <script src="js/datePicker.js"></script>
 <script>
     $(function () {
-        $("#privacy_policy>span").click(function () {
-
-            $(this).parent("a").siblings(".popupwrapper").show();
-
+        $("#footer .privacy").click(function () {
+            $("#footer .popupwrapper_1").show();
         })
-        $("#terms_of_use>span").click(function () {
-
-            $(this).parent("a").siblings(".popupwrapper").show();
-
+        $("#footer .use").click(function () {
+            $("#footer .popupwrapper_2").show();
         })
+
         $(".close").click(function () {
             $(".popupwrapper").hide()
         })
