@@ -5,6 +5,7 @@
     display: block;
     top: 42px;
     margin-bottom: 30px;
+    padding-left: 200px;
 }
 #footer div{
     position: relative;

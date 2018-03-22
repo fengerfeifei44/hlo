@@ -753,7 +753,6 @@ font-size: 14px;
     padding-bottom: 20px;
 }
 .conclusion_page .mana li{
-    height: 58px;
     line-height: 58px;
     border-bottom: 1px solid #ebebeb;
     font-size: 18px;
@@ -771,6 +770,17 @@ font-size: 14px;
     font-size: 16px;
     color: #9c9c9c;
 }
+@media screen and (max-device-width: 800px) {
+    body,html{
+        width: 100%;
+    }
+  body{
+      background-size: auto auto;
 
+  }
+    .circle_btn .icon_3{
+        display: none;
+    }
+}
 
 
