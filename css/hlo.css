@@ -1096,6 +1096,14 @@ form .food .food_group .weight_group input[type=text].white{
         margin-top: 25px;
         margin-left: 20px;
     }
+    .tel_date input[type="date"]{
+      width: 50%;
+        background: #fff;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #ccc;
+        line-height: 24px;
+    }
     form .form_btn .back{
         position: inherit;
         float: left;
