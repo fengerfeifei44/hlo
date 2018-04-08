@@ -1,33 +1,34 @@
 #footer {
-    width: 405px;
+   /* width: 405px;*/
     margin: auto;
     overflow: hidden;
     display: block;
     top: 42px;
     margin-bottom: 30px;
-    padding-left: 200px;
+
 }
 #footer div{
     position: relative;
 }
-#footer>p>span{
+#footer>p>span>span{
     display: inline-block;
     line-height: 12px;
     cursor: pointer;
 }
 #footer>p{
+    text-align: center;
     font-size: 11px;
 }
-#footer>p>span.privacy{
+#footer>p span.privacy{
     margin-left: 12px;
     margin-right: 4px;
 }
-#footer>p>span.use{
+#footer>p span.use{
     border-left: 1px solid rgb(85,85,85);
     padding:0 4px;
 }
 #footer>p:nth-of-type(1) {
-    display: inline-block;
+    display: block;
     font-family: "Microsoft YaHei", "微软雅黑";
     font-size: 11px;
     font-weight: normal;
@@ -137,4 +138,33 @@
     color: rgb(107, 112, 105);
     font-family: "Microsoft YaHei", 微软雅黑;
     font-size: 14px;
+}
+@media (max-width: 580px){
+    #footer>p>span{
+        display: block;
+    }
+    #footer ul {
+        margin: 0 auto;
+        width: 105px;
+    }
+    #footer{
+        margin: 20px 0;
+        width: inherit;
+        /* padding-left: 20px;*/
+    }
+    #footer>p:nth-of-type(1){
+        text-align: center;
+    }
+    #footer .popupwrapper.on{
+        width: 94%;
+        margin: 8px 3%;
+    }
+    #footer .popupwrapper.on .popupalign{
+        width: inherit;
+    }
+    #footer .popupwrapper.on .popupalign .popup{
+        width: 80%!important;
+        height: 450px!important;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.3)
+    }
 }

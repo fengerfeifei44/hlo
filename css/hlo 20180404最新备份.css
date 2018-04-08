@@ -152,7 +152,6 @@ input::-webkit-input-placeholder{
     margin-left: 20px;
     background: url("../images/icon.png") 0px -214px;
     background-size: 189px;
-    cursor: pointer;
 
 }
 .progress{
@@ -394,7 +393,6 @@ input::-webkit-input-placeholder{
     width:6px;
     height: 13px;
     background: #fff;
-    box-shadow: 3px 2px 0px rgba(255,255,255,1);
 
 }
 #slider .slider_value{
@@ -465,9 +463,6 @@ font-size: 14px;
     background: url("../images/icon.png") no-repeat -39px -117px;
     margin-left: 19px;
     background-size: 189px;
-}
- .tel_date{
-    display: none;
 }
   form .date_picker{
 
@@ -560,7 +555,7 @@ font-size: 14px;
     font-size: 14px;
     color: #9c9c9c;
 }
-  .weight_group label{
+  form .food .food_group .weight_group label{
     margin-right: 15px;
     display: inline-block;
     width: 35px;
@@ -640,9 +635,6 @@ font-size: 14px;
     font-size: 16px;
     line-height: 24px;
     color: #485465;
-}
-.conclusion_page .complete>p:nth-child(3){
-    margin-top: 15px;
 }
 .conclusion_page .conclu_box{
     box-sizing: border-box;
@@ -908,12 +900,7 @@ font-size: 14px;
         font-size: 12px;
     }
     form .food .food_group .weight_group .mm{
-
         font-size: 14px;
-    }
-    form .food .food_group .weight_group .mm.know{
-        float: right;
-        margin-left: 0;
     }
     .conclusion_page .conclu_box .data_title{
         margin-left: 0;
@@ -1068,7 +1055,7 @@ font-size: 14px;
     }
     .problem_title{
         text-align: left;
-        font-size: 22px;
+        font-size: 20px;
         padding-left: 15px;
     }
     .circle_btn .icon_1{
@@ -1087,39 +1074,14 @@ font-size: 14px;
         display: none;
     }
     .tel_date{
-        display: block;
         margin-top: 25px;
         margin-left: 20px;
     }
     form .form_btn .back{
         position: inherit;
-        float: left;
-        margin-top: 30px;
     }
     form .form_btn .continue{
         position: inherit;
-        float: right;
-        margin-top: 30px;
-    }
-    form .form_btn span{
-        font-size: 16px;
-    }
-    #start .start_page.end_page .end {
-        padding: 60px 20px 0;
-    }
-    #start .start_page.end_page .end p:nth-child(1){
-        font-size: 18px;
-    }
-    .conclusion_page .complete{
-        margin-top: 70px;
-        margin-bottom: 15px;
-    }
-    .conclusion_page .complete>p{
-        width: 88%;
-        font-size: 14px;
-    }
-    .conclusion_page .complete>p:nth-child(3) {
-        margin-top: 8px;
     }
 }
 

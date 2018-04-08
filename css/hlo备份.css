@@ -152,7 +152,6 @@ input::-webkit-input-placeholder{
     margin-left: 20px;
     background: url("../images/icon.png") 0px -214px;
     background-size: 189px;
-    cursor: pointer;
 
 }
 .progress{
@@ -374,7 +373,7 @@ input::-webkit-input-placeholder{
     font-size: 14px;
     color: #9c9c9c;
 }
-/*  问题页*/
+/*#problem 问题页*/
 #slider .ui-widget.ui-widget-content{
     border: 1px solid #fff;
 }
@@ -394,7 +393,6 @@ input::-webkit-input-placeholder{
     width:6px;
     height: 13px;
     background: #fff;
-    box-shadow: 3px 2px 0px rgba(255,255,255,1);
 
 }
 #slider .slider_value{
@@ -407,32 +405,31 @@ input::-webkit-input-placeholder{
 #slider .slider_value>span>span{
 font-size: 14px;
 }
-.amount{
+#amount,#amount1{
     border:0;
-
+    color:#f6931f;
     font-size: 14px;
     position: absolute;
     top:30px;
-    width: 10px;
     color: #444;
 }
-  form{
+#problem form{
     margin: 34px 99px 0 79px;
 
 }
-   .problem_page{
+#problem  .problem_page{
     padding-bottom: 150px;
 }
-  form .sentence{
+#problem form .sentence{
     margin: 26px 0;
     font-size: 20px;
     color: #333333;
 }
-  form .sentence .grey{
+#problem form .sentence .grey{
     font-size: 14px;
     color: #9c9c9c;
 }
-  form .form_btn span{
+#problem form .form_btn span{
     position: relative;
     top:3px;
     border: none;
@@ -440,45 +437,42 @@ font-size: 14px;
     color: #009eca;
     background: none;
 }
-  form .form_btn .back{
+#problem form .form_btn .back{
     position: absolute;
    bottom: 65px;
     left: 79px;
     cursor: pointer;
 
 }
-  form .form_btn .continue{
+#problem form .form_btn .continue{
     position: absolute;
     bottom: 65px;
     right: 100px;
     cursor: pointer;
 
 }
-  form .form_btn .back i{
+#problem form .form_btn .back i{
     background: url("../images/icon.png") no-repeat 0 -117px;
     margin-right: 19px;
     background-size: 189px;
 
 
 }
-  form .form_btn .continue i{
+#problem form .form_btn .continue i{
     background: url("../images/icon.png") no-repeat -39px -117px;
     margin-left: 19px;
     background-size: 189px;
 }
- .tel_date{
-    display: none;
-}
-  form .date_picker{
+#problem form .date_picker{
 
     padding-left: 50px;
 }
-  form .date_picker p.group{
+#problem form .date_picker p.group{
     position: relative;
     display: inline-block;
     height: 500px;
 }
-  form .date_picker strong{
+#problem form .date_picker strong{
     position: absolute;
     top:0;
     left: 0;
@@ -487,7 +481,7 @@ font-size: 14px;
     border: solid 1px #ebebeb;
     /*background: #fff;*/
 }
-  form .date_picker select{
+#problem form .date_picker select{
     width: 40px;
     height: 25px;
     border: solid 1px #ebebeb;
@@ -496,71 +490,73 @@ font-size: 14px;
     vertical-align: middle;
 
 }
-  form .date_picker select.other{
+#problem form .date_picker select.other{
     width: 60px;
 }
-  form .date_picker span{
+#problem form .date_picker span{
    margin: 0 10px;
     font-size: 18px;
     color: #444444;
 }
-  form label{
+#problem form label{
     font-size: 18px;
     color: #444444;
 }
-  form .input{
+#problem form .input{
     margin-left: 51px;
     margin-bottom: 16px;
 }
 
-  form p.input:last-of-type{
+#problem form p.input:last-of-type{
     margin-bottom: 0px;
 }
 
-/*  form .input input{
+/*#problem form .input input{
     display: none;
 }*/
-  form .input label{
+#problem form .input label{
     padding-left: 40px;
 }
-  form  input[type=radio]+label{
+#problem form  input[type=radio]+label{
     background: url("../images/radio_not.png") no-repeat 0 2px;
     background-size: 20px ;
 
 }
-  form  input[type=checkbox]+label{
+#problem form  input[type=checkbox]+label{
     background: url("../images/chek_not.png") no-repeat 0 2px;
     background-size: 20px ;
 }
-  form  input[type=radio]+label.on{
+#problem form  input[type=radio]+label.on{
     background: url("../images/radio_on.png") no-repeat 0 2px;
     background-size: 20px ;
 }
-  form  input[type=checkbox]+label.on{
+#problem form  input[type=checkbox]+label.on{
     background: url("../images/chek_on.png") no-repeat 0 2px;
     background-size: 20px ;
 }
-  form .food .food_answer{
+#problem form .food .food_answer{
     margin: 27px 0;
     font-size: 22px;
     color: #333333;
 }
-  form .food .sentence{
+#problem form .food .sentence{
     margin: 17px 0;
 }
-  form .food .food_group{
+#problem form .food .food_group{
     padding-bottom: 17px;
     border-bottom: solid 1px #ebebeb;
 }
-  form .food .food_group .weight_group{
+#problem form .food .food_group .weight_group{
     margin-left: 49px;
 }
- .detail{
-     margin-bottom: 18px;
+#problem form .food .food_group .detail{
+
+
+    margin-bottom: 18px;
     font-size: 14px;
     color: #9c9c9c;
 }
-  .weight_group label{
+#problem form .food .food_group .weight_group label{
     margin-right: 15px;
     display: inline-block;
     width: 35px;
@@ -574,15 +570,15 @@ font-size: 14px;
     border: solid 1px #ebebeb;
     cursor: pointer;
 }
-  form .food .food_group .weight_group label:hover{
+#problem form .food .food_group .weight_group label:hover{
     color: #009fca;
     border: solid 1px #009dca;
 }
-  form .food .food_group .weight_group label.on{
+#problem form .food .food_group .weight_group label.on{
     color: #009fca;
     border: solid 1px #009dca;
 }
-  form .food .food_group .weight_group input[type=text]{
+#problem form .food .food_group .weight_group input[type=text]{
     margin-right: 10px;
     width: 40px;
     height: 25px;
@@ -590,28 +586,28 @@ font-size: 14px;
     background-color: #f4f4f4;
     border: solid 1px #ebebeb;
 }
-  form .food .food_group .weight_group .mm{
+#problem form .food .food_group .weight_group .mm{
     width: inherit;
     height: inherit;
     font-size: 18px;
     color: #444444;
     border: none;
 }
-  form .food .food_group .weight_group .mm.know{
+#problem form .food .food_group .weight_group .mm.know{
     margin-left: 40px;
     padding-left: 30px;
     background: url("../images/radio_not.png") no-repeat 0 4px;
     background-size: 20px;
 }
-  form .food .food_group .weight_group .mm.know.select{
+#problem form .food .food_group .weight_group .mm.know.select{
     background: url("../images/radio_on.png") no-repeat 0 4px;
     background-size: 20px;
 }
-  form .food .food_group .weight_group .mm.know.on{
+#problem form .food .food_group .weight_group .mm.know.on{
     color: #444444;
     border: none;
 }
-  form .food .food_group .weight_group .mm:hover{
+#problem form .food .food_group .weight_group .mm:hover{
     color: #444444;
     border: none;
 }
@@ -640,9 +636,6 @@ font-size: 14px;
     font-size: 16px;
     line-height: 24px;
     color: #485465;
-}
-.conclusion_page .complete>p:nth-child(3){
-    margin-top: 15px;
 }
 .conclusion_page .conclu_box{
     box-sizing: border-box;
@@ -786,33 +779,7 @@ font-size: 14px;
     line-height: 24px;
     margin-bottom: 35px;
 }
-.assess_pro{
-    border: 1px solid #ececec;
-    margin-bottom: 50px;
-}
-.assess_pro .pro_group{
-    padding-bottom: 20px;
-    border-bottom: 1px dashed #ebebeb;
-}
-.assess_pro .pro_group:nth-last-child(1){
-    border-bottom: none;
-    margin-bottom: 0;
-}
-.assess_pro form{
-    margin-left: 60px;
-}
-.assess_pro .pro_group{
-    margin-bottom: 30px;
-}
-.assess_pro form .food .food_answer{
-    font-size: 20px;
-}
-.assess_pro #slider{
-    border-bottom: none;
-}
-.assess_pro form .food .food_group{
-    border-bottom: none;
-}
+
 @media screen and (max-device-width: 800px) {
     body,html{
         width: 100%;
@@ -823,303 +790,6 @@ font-size: 14px;
   }
     .circle_btn .icon_3{
         display: none;
-    }
-    #box{
-        margin: 0;
-        width: auto;
-        border-radius: inherit;
-    }
-    .conclusion_page .conclu_box{
-        width: auto;
-    }
-    /*评估报告页面*/
-    .conclusion_page .data_group2 li:not(:first-child){
-        width: auto;
-    }
-    .problem_title{
-        margin-left: 0;
-       padding-top: 25px;
-        text-align: center;
-        font-size: 24px;
-    }
-    .per_infor{
-        padding-left: 0;
-        margin-bottom: 20px;
-    }
-    #conclusion .conclusion_page {
-        margin: 25px 20px 0;
-    }
-    .assess_pro form {
-        margin-left: 15px;
-    }
-    form {
-        margin: 15px 15px 0 15px;
-    }
-    form .sentence{
-        margin: 10px 0;
-        font-size: 16px;
-    }
-    form .food .sentence {
-        margin: 10px 0;
-    }
-    form .input {
-        margin-left: 24px;
-        margin-bottom: 8px;
-    }
-    form label{
-        font-size: 14px;
-    }
-    .assess_pro form .food .food_answer {
-        font-size: 16px;
-    }
-    .assess_pro .pro_group {
-        margin-bottom: 15px;
-    }
-    form .food .food_answer{
-        margin: 0;
-    }
-    .circle{
-        position: relative;
-        top: -2px;
-        margin-right: 10px;
-        width: 5px;
-        height: 5px;
-    }
-
-    form .food .food_group .weight_group {
-        margin-left: 18px;
-    }
-    form .food .food_group .weight_group label{
-        margin-bottom: 10px;
-    }
-    #slider .slider{
-        width: 100%;
-    }
-    .ui-slider-horizontal {
-        height: 10px;
-    }
-    #slider .slider_value{
-        width: auto;
-    }
-    .font_18{
-        font-size: 14px;
-    }
-    #slider .slider_value>span>span {
-        font-size: 12px;
-    }
-    form .food .food_group .weight_group .mm{
-
-        font-size: 14px;
-    }
-    form .food .food_group .weight_group .mm.know{
-        float: right;
-        margin-left: 0;
-    }
-    .conclusion_page .conclu_box .data_title{
-        margin-left: 0;
-    }
-    .conclusion_page .conclu_box{
-        padding:25px 15px 0 15px;
-    }
-    .conclusion_page .conclu_box .data_title{
-        font-size: 22px;
-    }
-    .conclusion_page .one{
-        font-size: 20px;
-    }
-    .conclusion_page .two{
-        font-size: 16px;
-    }
-    .conclusion_page .two i{
-        margin-right: 15px;
-    }
-    .assess_pro{
-        margin-bottom: 20px;
-    }
-    .mbottom71 {
-        margin-bottom: 25px;
-    }
-    .mbottom50 {
-        margin-bottom: 25px;
-    }
-    .conclusion_page .data_group2{
-        margin-right: 0;
-        margin-top: 25px;
-    }
-    .conclusion_page .data_group2 li:not(:first-child) {
-        float: inherit;
-
-    }
-    .conclusion_page .data_group2 li:not(:first-child):nth-child(2n) {
-        margin-right: 0;
-    }
-    .conclusion_page .data_group2 li{
-        margin-bottom: 15px;
-        padding: 15px;
-
-    }
-    .font_20{
-        font-size: 16px;
-    }
-    .font_16{
-        font-size: 14px;
-    }
-    .conclusion_page .mana{
-        margin: 0 15px;
-    }
-    .conclusion_page .mana li{
-        line-height: 24px;
-        font-size: 16px;
-        padding: 10px 0;
-    }
-    .conclusion_page .huimei {
-        padding: 15px 0;
-    }
-    .conclusion_page .huimei>p {
-        line-height: 24px;
-        font-size: 12px;
-    }
-    /*登录页*/
-    #login .pull-left>img{
-        display: none;
-    }
-    #login .pull-left {
-        float: inherit;
-    }
-    #login .loginPage {
-        width: 100%;
-        padding: 60px 25px 40px;
-    }
-    #login .right{
-        margin: 0 auto;
-        width: 100%;
-    }
-    #login .pull-right {
-        float: inherit;
-    }
-    #login form .text{
-        width: inherit;
-    }
-    #login .copy1, #login .copy2 {
-        position: inherit;
-    }
-    #login .copy2{
-        top:0;
-        left: 0;
-
-    }
-    #login .copy0{
-        position: inherit;
-    }
-    #login .introduce{
-        margin-bottom: 20px;
-        font-size: 12px;
-    }
-    .title{
-        font-size: 20px;
-    }
-    #login .color_9c{
-        padding: 0 10px;
-        font-size: 14px;
-    }
-    #login form {
-         margin-top: 15px;
-    }
-    #login form .text{
-        margin-bottom: 15px;
-    }
-    /*开始页*/
-    #start .start_page{
-        padding: 20px;
-    }
-    #start .list{
-        width: auto;
-        padding: 20px;
-        height: auto;
-    }
-    .button{
-        position: initial;
-    }
-
-    #start .prepare {
-        margin-top: 20px;
-        font-size: 16px;
-
-    }
-    #start .list li {
-        margin-bottom: 15px;
-        font-size: 16px;
-        line-height: 20px;
-
-    }
-    .button .start_btn{
-        margin-top: 45px;
-    }
-    .progress>span:nth-child(1){
-        float: inherit;
-        display: block;
-    }
-    .progress #myprogressbar {
-        margin: 20px 20px 0 0px;
-        width: 75%;
-    }
-    .progress>span:nth-of-type(2){
-        margin-top: 16px;
-    }
-    .problem_title{
-        text-align: left;
-        font-size: 22px;
-        padding-left: 15px;
-    }
-    .circle_btn .icon_1{
-        font-size: 16px;
-        margin-right: 10px;
-    }
-    .progress{
-        margin-top: 70px;
-        margin-left: 15px;
-    }
-    .time{
-        margin-left: 15px;
-        margin-bottom: 30px;
-    }
-    form .date_picker{
-        display: none;
-    }
-    .tel_date{
-        display: block;
-        margin-top: 25px;
-        margin-left: 20px;
-    }
-    form .form_btn .back{
-        position: inherit;
-        float: left;
-        margin-top: 30px;
-    }
-    form .form_btn .continue{
-        position: inherit;
-        float: right;
-        margin-top: 30px;
-    }
-    form .form_btn span{
-        font-size: 16px;
-    }
-    #start .start_page.end_page .end {
-        padding: 60px 20px 0;
-    }
-    #start .start_page.end_page .end p:nth-child(1){
-        font-size: 18px;
-    }
-    .conclusion_page .complete{
-        margin-top: 70px;
-        margin-bottom: 15px;
-    }
-    .conclusion_page .complete>p{
-        width: 88%;
-        font-size: 14px;
-    }
-    .conclusion_page .complete>p:nth-child(3) {
-        margin-top: 8px;
     }
 }
 
