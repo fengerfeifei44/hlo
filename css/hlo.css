@@ -591,6 +591,9 @@ font-size: 14px;
     border: solid 1px #ebebeb;
       -webkit-appearance: none;
 }
+form .food .food_group .weight_group input[type=text].white{
+    background-color: #fff;
+}
   form .food .food_group .weight_group .mm{
     width: inherit;
     height: inherit;
