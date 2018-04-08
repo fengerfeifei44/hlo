@@ -939,6 +939,7 @@ form .food .food_group .weight_group input[type=text].white{
         margin-right: 15px;
     }
     .assess_pro{
+        display: none;
         margin-bottom: 20px;
     }
     .mbottom71 {
@@ -1098,16 +1099,16 @@ form .food .food_group .weight_group input[type=text].white{
     }
     .tel_date input[type="date"]{
         display: block;
-      width: 50%;
+        width: 50%;
         background: #fff;
         border-radius: 3px;
-        outline: none;
         border: 1px solid #ccc;
-        height: 30px;
-        line-height: 30px;
+        height: 24px;
+        line-height: 24px;
         font-size: 14px;
         outline: none;
         -webkit-appearance: none;
+
     }
     form .form_btn .back{
         position: inherit;
