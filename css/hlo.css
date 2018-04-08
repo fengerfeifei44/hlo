@@ -582,7 +582,7 @@ font-size: 14px;
     color: #009fca;
     border: solid 1px #009dca;
 }
-  form .food .food_group .weight_group input[type=text]{
+   .weight_group input[type=text]{
     margin-right: 10px;
     width: 40px;
     height: 25px;
@@ -594,7 +594,7 @@ font-size: 14px;
 form .food .food_group .weight_group input[type=text].white{
     background-color: #fff;
 }
-  form .food .food_group .weight_group .mm{
+  .weight_group .mm{
     width: inherit;
     height: inherit;
     font-size: 18px;
@@ -607,15 +607,15 @@ form .food .food_group .weight_group input[type=text].white{
     background: url("../images/radio_not.png") no-repeat 0 4px;
     background-size: 20px;
 }
-  form .food .food_group .weight_group .mm.know.select{
+ .weight_group .mm.know.select{
     background: url("../images/radio_on.png") no-repeat 0 4px;
     background-size: 20px;
 }
-  form .food .food_group .weight_group .mm.know.on{
+ .weight_group .mm.know.on{
     color: #444444;
     border: none;
 }
-  form .food .food_group .weight_group .mm:hover{
+ .weight_group .mm:hover{
     color: #444444;
     border: none;
 }
@@ -927,10 +927,10 @@ form .food .food_group .weight_group input[type=text].white{
         padding:25px 15px 0 15px;
     }
     .conclusion_page .conclu_box .data_title{
-        font-size: 22px;
+        font-size: 20px;
     }
     .conclusion_page .one{
-        font-size: 20px;
+        font-size: 19px;
     }
     .conclusion_page .two{
         font-size: 16px;
