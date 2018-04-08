@@ -589,6 +589,7 @@ font-size: 14px;
     text-align: center;
     background-color: #f4f4f4;
     border: solid 1px #ebebeb;
+      -webkit-appearance: none;
 }
   form .food .food_group .weight_group .mm{
     width: inherit;
