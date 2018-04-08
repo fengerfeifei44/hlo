@@ -1097,12 +1097,17 @@ form .food .food_group .weight_group input[type=text].white{
         margin-left: 20px;
     }
     .tel_date input[type="date"]{
+        display: block;
       width: 50%;
         background: #fff;
         border-radius: 3px;
         outline: none;
         border: 1px solid #ccc;
-        line-height: 24px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        outline: none;
+        -webkit-appearance: none;
     }
     form .form_btn .back{
         position: inherit;
