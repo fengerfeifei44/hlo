@@ -1001,7 +1001,7 @@ font-size: 14px;
     .conclusion_page .huimei>p:nth-child(1){
         line-height: 24px;
         font-size: 14px;
-        color: #009eca;
+        color: #f79206;
     }
     .huimei_other{
         margin-top: 25px;
@@ -1014,14 +1014,14 @@ font-size: 14px;
     }
     .huimei_other p:nth-child(2){
         margin-top: 3px;
-        font-size: 10px;
-        color: #9c9c9c;
+        font-size: 11px;
+        color: #009eca;
         text-align: center;
     }
     .huimei_other p:nth-child(3){
         margin-top: 10px;
         padding: 0 15px;
-        font-size: 10px;
+        font-size: 8px;
         color: #9c9c9c;
         text-align: left;
         line-height: 16px;
