@@ -989,8 +989,8 @@ font-size: 14px;
     }
     .conclusion_page .huimei{
         margin-top: 25px;
-     /*  border: 1px solid #009eca;*/
-        background: #f7f7f7;
+       border: 1px solid #009eca;
+        /*background: #f7f7f7;*/
     }
     .conclusion_page .huimei {
         padding: 15px 15px;
