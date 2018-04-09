@@ -6,7 +6,7 @@ body{
 }
 #box{
     position: relative;
-   /* min-height: 930px;*/
+    /* min-height: 930px;*/
     box-sizing: border-box;
     margin: 74px auto 30px;
     width: 1200px;
@@ -113,7 +113,7 @@ input::-webkit-input-placeholder{
     background-color: #008db4;
 }
 .problem_title{
-   padding-top: 60px;
+    padding-top: 60px;
     margin-left: 39px;
     font-size: 36px;
     letter-spacing: 1px;
@@ -183,7 +183,7 @@ input::-webkit-input-placeholder{
     margin-bottom: 71px;
 }
 .color_9c
-/*改ui样式*/
+    /*改ui样式*/
 .ui-progressbar{
     height: 6px;
 }
@@ -238,7 +238,7 @@ input::-webkit-input-placeholder{
 
 }
 #login .introduce{
-  /*  margin-top: 10px;*/
+    /*  margin-top: 10px;*/
     font-size: 20px;
     color: #009eca;
     text-align: center;
@@ -361,7 +361,7 @@ input::-webkit-input-placeholder{
     margin-top: 28px;
     box-sizing: border-box;
     padding: 44px 42px 41px;
-   /* width: 1038px;*/
+    width: 1038px;
     height: 280px;
     border: solid 1px #ececec;
 }
@@ -400,14 +400,14 @@ input::-webkit-input-placeholder{
 
 }
 #slider .slider_value{
-   width: 700px;
+    width: 700px;
     margin-top: 45px;
 }
 #slider .slider_value>span.right{
     float: right;
 }
 #slider .slider_value>span>span{
-font-size: 14px;
+    font-size: 14px;
 }
 .amount{
     border:0;
@@ -418,23 +418,23 @@ font-size: 14px;
     width: 10px;
     color: #444;
 }
-  form{
+form{
     margin: 34px 99px 0 79px;
 
 }
-   .problem_page{
+.problem_page{
     padding-bottom: 150px;
 }
-  form .sentence{
+form .sentence{
     margin: 26px 0;
     font-size: 20px;
     color: #333333;
 }
-  form .sentence .grey{
+form .sentence .grey{
     font-size: 14px;
     color: #9c9c9c;
 }
-  form .form_btn span{
+form .form_btn span{
     position: relative;
     top:3px;
     border: none;
@@ -442,45 +442,45 @@ font-size: 14px;
     color: #009eca;
     background: none;
 }
-  form .form_btn .back{
+form .form_btn .back{
     position: absolute;
-   bottom: 65px;
+    bottom: 65px;
     left: 79px;
     cursor: pointer;
 
 }
-  form .form_btn .continue{
+form .form_btn .continue{
     position: absolute;
     bottom: 65px;
     right: 100px;
     cursor: pointer;
 
 }
-  form .form_btn .back i{
+form .form_btn .back i{
     background: url("../images/icon.png") no-repeat 0 -117px;
     margin-right: 19px;
     background-size: 189px;
 
 
 }
-  form .form_btn .continue i{
+form .form_btn .continue i{
     background: url("../images/icon.png") no-repeat -39px -117px;
     margin-left: 19px;
     background-size: 189px;
 }
- .tel_date{
+.tel_date{
     display: none;
 }
-  form .date_picker{
+form .date_picker{
 
     padding-left: 50px;
 }
-  form .date_picker p.group{
+form .date_picker p.group{
     position: relative;
     display: inline-block;
     height: 500px;
 }
-  form .date_picker strong{
+form .date_picker strong{
     position: absolute;
     top:0;
     left: 0;
@@ -489,7 +489,7 @@ font-size: 14px;
     border: solid 1px #ebebeb;
     /*background: #fff;*/
 }
-  form .date_picker select{
+form .date_picker select{
     width: 40px;
     height: 25px;
     border: solid 1px #ebebeb;
@@ -498,72 +498,72 @@ font-size: 14px;
     vertical-align: middle;
 
 }
-  form .date_picker select.other{
+form .date_picker select.other{
     width: 60px;
 }
-  form .date_picker span{
-   margin: 0 10px;
+form .date_picker span{
+    margin: 0 10px;
     font-size: 18px;
     color: #444444;
 }
-  form label{
+form label{
     font-size: 18px;
     color: #444444;
 }
-  form .input{
+form .input{
     margin-left: 51px;
     margin-bottom: 16px;
 }
 
-  form p.input:last-of-type{
+form p.input:last-of-type{
     margin-bottom: 0px;
 }
 
 /*  form .input input{
     display: none;
 }*/
-  form .input label{
+form .input label{
     padding-left: 40px;
-      cursor: pointer;
+    cursor: pointer;
 }
-  form  input[type=radio]+label{
+form  input[type=radio]+label{
     background: url("../images/radio_not.png") no-repeat 0 2px;
     background-size: 20px ;
 
 }
-  form  input[type=checkbox]+label{
+form  input[type=checkbox]+label{
     background: url("../images/chek_not.png") no-repeat 0 2px;
     background-size: 20px ;
 }
-  form  input[type=radio]+label.on{
+form  input[type=radio]+label.on{
     background: url("../images/radio_on.png") no-repeat 0 2px;
     background-size: 20px ;
 }
-  form  input[type=checkbox]+label.on{
+form  input[type=checkbox]+label.on{
     background: url("../images/chek_on.png") no-repeat 0 2px;
     background-size: 20px ;
 }
-  form .food .food_answer{
+form .food .food_answer{
     margin: 27px 0;
     font-size: 22px;
     color: #333333;
 }
-  form .food .sentence{
+form .food .sentence{
     margin: 17px 0;
 }
-  form .food .food_group{
+form .food .food_group{
     padding-bottom: 17px;
     border-bottom: solid 1px #ebebeb;
 }
-   .weight_group{
+form .food .food_group .weight_group{
     margin-left: 49px;
 }
- .detail{
-     margin-bottom: 18px;
+.detail{
+    margin-bottom: 18px;
     font-size: 14px;
     color: #9c9c9c;
 }
-  .weight_group label{
+.weight_group label{
     margin-right: 15px;
     display: inline-block;
     width: 35px;
@@ -577,48 +577,48 @@ font-size: 14px;
     border: solid 1px #ebebeb;
     cursor: pointer;
 }
-   .weight_group label:hover{
+.weight_group label:hover{
     color: #009fca;
     border: solid 1px #009dca;
 }
-   .weight_group label.on{
+.weight_group label.on{
     color: #009fca;
     border: solid 1px #009dca;
 }
-   .weight_group input[type=text]{
+.weight_group input[type=text]{
     margin-right: 10px;
     width: 40px;
     height: 25px;
     text-align: center;
     background-color: #f4f4f4;
     border: solid 1px #ebebeb;
-      -webkit-appearance: none;
+    -webkit-appearance: none;
 }
- .weight_group input[type=text].white{
+.weight_group input[type=text].white{
     background-color: #fff;
 }
-  .weight_group .mm{
+.weight_group .mm{
     width: inherit;
     height: inherit;
     font-size: 18px;
     color: #444444;
     border: none;
 }
-   .weight_group .mm.know{
+.weight_group .mm.know{
     margin-left: 40px;
     padding-left: 30px;
     background: url("../images/radio_not.png") no-repeat 0 4px;
     background-size: 20px;
 }
- .weight_group .mm.know.select{
+.weight_group .mm.know.select{
     background: url("../images/radio_on.png") no-repeat 0 4px;
     background-size: 20px;
 }
- .weight_group .mm.know.on{
+.weight_group .mm.know.on{
     color: #444444;
     border: none;
 }
- .weight_group .mm:hover{
+.weight_group .mm:hover{
     color: #444444;
     border: none;
 }
@@ -630,7 +630,7 @@ font-size: 14px;
 
 }
 .conclusion_page .complete{
-   margin-bottom: 45px;
+    margin-bottom: 45px;
 }
 .conclusion_page .complete>span{
     position: relative;
@@ -695,7 +695,7 @@ font-size: 14px;
 }
 .conclusion_page .two{
     margin: 16px 0 12px 0;
-   font-size: 18px;
+    font-size: 18px;
 }
 .conclusion_page .two i{
     position: relative;
@@ -704,7 +704,7 @@ font-size: 14px;
     display: inline-block;
     width: 24px;
     height: 24px;
-   background: url("../images/icon.png") no-repeat;
+    background: url("../images/icon.png") no-repeat;
     vertical-align: middle;
     background-size: 189px;
 }
@@ -783,7 +783,7 @@ font-size: 14px;
 }
 .conclusion_page .huimei>p{
     line-height: 36px;
-    /*text-align: center;*/
+    text-align: center;
     font-size: 16px;
     color: #9c9c9c;
 }
@@ -820,18 +820,15 @@ font-size: 14px;
 .assess_pro form .food .food_group{
     border-bottom: none;
 }
-.huimei_other{
-    display: none;
-}
 @media screen and (max-device-width: 800px) {
     body,html{
         width: 100%;
     }
-  body{
-      background: #eff6f8;
-      background-size: auto auto;
+    body{
+        background: #eff6f8;
+        background-size: auto auto;
 
-  }
+    }
     .circle_btn .icon_3{
         display: none;
     }
@@ -849,7 +846,7 @@ font-size: 14px;
     }
     .problem_title{
         margin-left: 0;
-       padding-top: 25px;
+        padding-top: 25px;
         text-align: center;
         font-size: 24px;
     }
@@ -859,7 +856,6 @@ font-size: 14px;
     }
     #conclusion .conclusion_page {
         margin: 25px 20px 0;
-        padding-bottom: 25px;
     }
     .assess_pro form {
         margin-left: 15px;
@@ -901,7 +897,7 @@ font-size: 14px;
     form .food .food_group .weight_group {
         margin-left: 18px;
     }
-     .weight_group label{
+    .weight_group label{
         margin-bottom: 10px;
     }
     #slider .slider{
@@ -985,46 +981,12 @@ font-size: 14px;
         font-size: 16px;
         padding: 10px 0;
     }
-    .conclusion_page .huimei{
-        margin-top: 25px;
-       border: 1px solid #ececec;
-    }
     .conclusion_page .huimei {
-        padding: 15px 15px;
+        padding: 15px 0;
     }
-    .conclusion_page .huimei>p{
-        line-height: 18px;
-        font-size: 12px;
-        margin-bottom: 4px;
-
-    }
-    .conclusion_page .huimei>p:nth-child(1){
+    .conclusion_page .huimei>p {
         line-height: 24px;
-        font-size: 14px;
-        color: #009eca;
-    }
-    .huimei_other{
-        margin-top: 25px;
-        display: block;
-    }
-    .huimei_other p:nth-child(1){
-        font-size: 22px;
-        color: #009eca;
-        text-align: center;
-    }
-    .huimei_other p:nth-child(2){
-        margin-top: 3px;
-        font-size: 10px;
-        color: #9c9c9c;
-        text-align: center;
-    }
-    .huimei_other p:nth-child(3){
-        margin-top: 10px;
-        padding: 0 15px;
-        font-size: 10px;
-        color: #9c9c9c;
-        text-align: left;
-        line-height: 16px;
+        font-size: 12px;
     }
     /*登录页*/
     #login .pull-left>img{
@@ -1070,7 +1032,7 @@ font-size: 14px;
         font-size: 14px;
     }
     #login form {
-         margin-top: 15px;
+        margin-top: 15px;
     }
     #login form .text{
         margin-bottom: 15px;
@@ -1201,5 +1163,4 @@ font-size: 14px;
         background-size: 19px;
     }
 }
-
 
