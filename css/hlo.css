@@ -1013,7 +1013,6 @@ font-size: 14px;
         text-align: center;
     }
     .huimei_other p:nth-child(2){
-        margin-top: 3px;
         font-size: 11px;
         color: #009eca;
         text-align: center;
@@ -1024,7 +1023,7 @@ font-size: 14px;
         font-size: 8px;
         color: #9c9c9c;
         text-align: left;
-        line-height: 16px;
+        line-height: 12px;
     }
     /*登录页*/
     #login .pull-left>img{
