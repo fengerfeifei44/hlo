@@ -1006,8 +1006,8 @@ font-size: 14px;
 
     }
     .line1{
-        border-bottom: 1px dashed;
-        border-image: -webkit-linear-gradient(left,#b9edfc,#76defb, #14cbfe , #009eca) 30 30;
+        height: 1px;
+        background: -webkit-linear-gradient(left,#b9edfc,#76defb, #14cbfe , #009eca);
     }
     .line2{
         height: 2px;
