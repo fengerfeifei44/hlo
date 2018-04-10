@@ -68,3 +68,8 @@
 option{
     border: none !important;
 }
+@media screen and (max-device-width: 800px){
+    .date_picker .font {
+        font-size: 14px;
+    }
+}

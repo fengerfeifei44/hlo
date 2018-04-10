@@ -2,144 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
     <meta http-equiv="Expires" content="-1">
     <meta http-equiv="Cache-Control" content="no-store">
     <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport"
+          content="width=    , user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>HLO</title>
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/hlo.css">
-    <link rel="stylesheet" href="css/date.css?v=1">
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/jquery-ui.css" />
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hlo.css?v=1">
+    <!--<script src="js/jquery-ui.min.js"></script>-->
 </head>
-<body id="problem">
+<body id="login">
 <div class="aa" style="float: right;background: red">下一页</div>
-<div id="box" class="problem_page clear">
-    <div class="problem_title">我的健康评估</div>
-    <div class="circle_btn"><span class="icon_1">重新开始</span><i class="icon_2 icon_btn"></i></div>
-    <div class="progress clear">
-        <span class="">评估进度</span>
-        <div id="myprogressbar"></div>
-        <span>37%</span>
+<div id="box" class="loginPage">
+    <div class="row clear">
+        <div class="pull-left">
+            <img src="images/login.png" alt="">
 
+            <div  class="text-center introduce"><p>本健康评估系统能帮您找到健康管理的最佳方式。</p>
+                <p>现在登录开始测评吧!</p>
+            </div>
+        </div>
+        <div class="pull-right right copy0">
+            <div class="right copy1">
+                <div class="right copy2">
+                    <div class="title">惠每健康评估系统</div>
+                    <p class="color_9c">源自梅奥医疗集团，值得信赖的健康生活指导系统</p>
+                    <form action="">
+                        <div class="row text">
+                            <i class="icon icon1"></i>
+                            <input type="text" placeholder="请输入登录账号">
+                        </div>
+                        <div class="row text">
+                            <i class="icon icon2"></i>
+                            <input type="password" placeholder="请输入登录密码">
+                        </div>
+                        <div>
+                            <input type="submit" class="btn" value="登录">
+                        </div>
+
+                    </form>
+                    <p class="orange">如有不适，请先使用惠每智能问诊系统</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <p class="time">整个健康评估需要花费10-15分钟完成</p>
-    <form action="">
-        <p class="sentence"><span class="circle"></span>请输入您的出生日期</p>
-       <!-- <div class="tel_date"><input type="date"></div>-->
-        <div class="tel_date">
-            <input type="date">
-           <!-- <select class="other"  id="date-sel-year" rel="2018"></select> <span>年</span>
-            <select id="date-sel-month" rel="1"></select> <span>月</span>
-            <select id="date-sel-day" rel="1"></select> <span>日</span>-->
-        </div>
-        <div class="date_picker clear">
-            <div  class="year">
-                <p class="value width60"></p>
-                <div class="parent width60">
-                    <div class="center">
-                    <ul class="list width60">
-                        <!-- <li>2018</li>
-                         <li>2017</li>
-                         <li>2016</li>
-                         <li>2015</li>
-                         <li>2014</li>
-                         <li>2013</li>
-                         <li>2012</li>
-                         <li>2011</li>
-                         <li>2010</li>
-                         <li>2009</li>
-                         <li>2014</li>
-                         <li>2013</li>
-                         <li>2018</li>
-                         <li>2017</li>
-                         <li>2016</li>
-                         <li>2015</li>
-                         <li>2014</li>
-                         <li>2013</li>-->
-                    </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div class="font">年</div>
-            <div  class="month">
-                <p  class="value"></p>
-                <div class="parent">
-                    <div class="center">
-                    <ul class="list">
-                        <li>01</li>
-                        <li>02</li>
-                        <li>03</li>
-                        <li>04</li>
-                        <li>05</li>
-                        <li>06</li>
-                        <li>07</li>
-                        <li>08</li>
-                        <li>09</li>
-                        <li>11</li>
-                        <li>12</li>
-
-                    </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="font">月</div>
-            <div  class="day">
-                <p class="value"></p>
-                <div class="parent">
-                    <div class="center">
-                    <ul class="list" >
-                        <li>01</li>
-                        <li>02</li>
-                        <li>03</li>
-                        <li>04</li>
-                        <li>05</li>
-                        <li>06</li>
-                        <li>07</li>
-                        <li>08</li>
-                        <li>09</li>
-                        <li>11</li>
-                        <li>12</li>
-                        <li>13</li>
-                        <li>14</li>
-                        <li>15</li>
-                        <li>16</li>
-                        <li>17</li>
-                        <li>18</li>
-                        <li>19</li>
-                        <li>20</li>
-                        <li>21</li>
-                        <li>22</li>
-                        <li>23</li>
-                        <li>24</li>
-                        <li>25</li>
-                        <li>26</li>
-                        <li>27</li>
-                        <li>28</li>
-                        <li>29</li>
-                        <li>30</li>
-                        <li>31</li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="font">日</div>
-
-        </div>
-
-        <div class="form_btn">
-            <div class="back"><i class="icon_btn"></i><span>返回</span></div>
-            <div class="continue"> <span>继续</span> <i class="icon_btn"></i></div>
-        </div>
-    </form>
-
 </div>
+
+<script src="js/jquery.js"></script>
 <div id="footer">
-    <p>© 2016 惠每医疗.版权所有.京ICP备16039627号-2 <span><span class="
+    <p>© 2016 惠每医疗.版权所有.京ICP备16039627号-2 <span> <span class="
 privacy">隐私政策</span><span class="use">使用政策</span></span></p>
     <div class="popupwrapper on popupwrapper_1">
         <div class="popupalign">
@@ -236,15 +152,7 @@ privacy">隐私政策</span><span class="use">使用政策</span></span></p>
         </div>
     </div>
 </div>
-<script src="js/jquery.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/datePicker1.js"></script>
 <script>
-    $.date_picker({
-        YearSelector:  "#date-sel-year",
-        MonthSelector: "#date-sel-month",
-        DaySelector:   "#date-sel-day"
-    });
     $(function () {
         $("#footer .privacy").click(function () {
             $("#footer .popupwrapper_1").show();
@@ -258,67 +166,9 @@ privacy">隐私政策</span><span class="use">使用政策</span></span></p>
         })
 
     })
-        function strLi() {
-            var str="";
-            for(var i=2018;i>=1900;i--){
-
-                 str=" <li>"+i+"</li>"
-                $('.year .list').append(str);
-            }
-        }
-        strLi();
-
-
-
-
-    $(function() {
-        $( "#myprogressbar" ).progressbar({
-            value: 37
-        });
-    });
-
-    $('.date_picker .value').click(function () {
-        $('.parent ').hide()
-        $(this).siblings('.parent').show()
-       /* $(".year_list").show();*/
-    })
-
-    $('.list li').click(function (event) {
-
-        $(this).parent().parent().parent().siblings(".value").html($(this).html())
-        $(this).parent().parent().parent().hide();
-        var value=$(this).parent().parent().parent().siblings(".value").html();
-        if(value){
-            $(this).parent().parent().parent().siblings(".value").css("background","#fff")
-        }
-    })
-    $(document).click(function(e){
-        var target = $(e.target);
-
-        if(target.hasClass('value')){
-
-        } else {
-
-            $('.parent').hide()
-        }
-
-
-    });
-
-    /* $(".year input").focus(function () {
-         $(".year_list").show();
-         $('.year_list li').click(function () {
-             $('.year input').val($(this).html())
-            $('.year_list').hide()
-         })
-
-     })*/
-
-
     $('.aa').click(function () {
-        window.location.href="4-性别.html"
+        window.location.href="2.html"
     })
-
 </script>
 </body>
 </html>

@@ -1006,12 +1006,15 @@ font-size: 14px;
 
     }
     .line1{
-        border-bottom: 1px dashed;
-        border-image: -webkit-linear-gradient(left,#b9edfc,#76defb, #14cbfe , #009eca) 30 30;
+       /* height: 1px;*/
+        border-bottom: 1px dotted #009eca;
+
+        /*border-image: -webkit-linear-gradient(left,#b9edfc,#76defb, #14cbfe , #009eca) 30 30;*/
+       /* background: -webkit-linear-gradient(left,#b9edfc,#76defb, #14cbfe , #009eca);;*/
     }
     .line2{
-        height: 2px;
-        background: -webkit-linear-gradient(left,  #009eca,#14cbfe,#76defb,#b9edfc );;
+       /* height: 2px;*/
+        border-bottom: 2px dotted  #009eca;
     }
     .conclusion_page .huimei{
        /* margin-top: 25px;*/
