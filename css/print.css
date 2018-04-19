@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'Swis721Thin';
+    src: url('../../fonts/swz721t-webfont.eot');
+    src: url('../../fonts/swz721t-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/swz721t-webfont.woff') format('woff'), url('../../fonts/swz721t-webfont.ttf') format('truetype'), url('../../fonts/swz721t-webfont.svg#Swis721ThBTThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Swis721Light';
+    src: url('../../fonts/swz721l-webfont.eot');
+    src: url('../../fonts/swz721l-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/swz721l-webfont.woff') format('woff'), url('../../fonts/swz721l-webfont.ttf') format('truetype'), url('../../fonts/swz721l-webfont.svg#Swis721LtBTLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Swis721';
+    src: url('../../fonts/swz721n-webfont.eot');
+    src: url('../../fonts/swz721n-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/swz721n-webfont.woff') format('woff'), url('../../fonts/swz721n-webfont.ttf') format('truetype'), url('../../fonts/swz721n-webfont.svg#Swis721BTRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Swis721Bold';
+    src: url('../../fonts/swz721b-webfont.eot');
+    src: url('../../fonts/swz721b-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/swz721b-webfont.woff') format('woff'), url('../../fonts/swz721b-webfont.ttf') format('truetype'), url('../../fonts/swz721b-webfont.svg#Swis721BTRomanBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.normal {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.r_tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../../img/common/r_tl.png") no-repeat;
+    width: 6px;
+    height: 6px;
+    z-index: 100;
+}
+
+.r_tl.lg {
+    background: url("../../img/common/r_tl_l.png") no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+.r_tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../../img/common/r_tr.png") no-repeat;
+    width: 6px;
+    height: 6px;
+    z-index: 100;
+}
+
+.r_tr.lg {
+    background: url("../../img/common/r_tr_l.png") no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+.r_br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url("../../img/common/r_br.png") no-repeat;
+    width: 6px;
+    height: 6px;
+    z-index: 100;
+}
+
+.r_br.lg {
+    background: url("../../img/common/r_br_l.png") no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+.r_bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../../img/common/r_bl.png") no-repeat;
+    width: 6px;
+    height: 6px;
+    z-index: 100;
+}
+
+.r_bl.lg {
+    background: url("../../img/common/r_bl_l.png") no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+.close, .cancel {
+    cursor: pointer;
+}
+
+.warn {
+    color: #d47312;
+    background: #ffffec url("../../img/common/icon_warning.png") no-repeat 12px center;
+    border: 1px solid #f7f1cb;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    font-family: 'Swis721Light', sans-serif;
+    font-size: 14px;
+    padding: 8px 15px 8px 55px;
+}
+
+.btn {
+    background: #0083df;
+    font-family: 'Swis721Bold', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 7px 20px;
+    cursor: pointer;
+    border: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    outline: none;
+}
+
+.btn:hover {
+    background: #0074c6;
+}
+
+html {
+    background: #ffffff;
+}
+
+#popupwrapper {
+    display: none;
+}
+
+body.conclusion {
+    background: #ffffff;
+    padding: 0;
+}
+
+body.conclusion #backstretch {
+    display: none;
+}
+
+body.conclusion #headerw {
+    display: none;
+}
+
+body.conclusion #main #content #sidebar {
+    display: none;
+}
+
+body.conclusion #main #content .print {
+    display: none;
+}
+
+body.conclusion #main #content #conclusion {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+body.conclusion #main #content #conclusion h1 {
+    width: 100%;
+}
+
+body.conclusion #main #content #conclusion p.terms {
+    clear: both;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #dddddd;
+    background: none;
+    padding: 15px 0;
+    color: #000000;
+    font-family: Arial;
+}
+
+body.conclusion #main #content #conclusion .item {
+    border: 0;
+}
+
+body.conclusion #main #content #conclusion .item p {
+    display: block !important;
+}
+
+body.conclusion #main #content #conclusion .item p a {
+    display: none !important;
+}
+
+body.conclusion #main #content #conclusion .item ul {
+    background: none;
+    list-style: disc;
+}
+
+body.conclusion #main #content #conclusion .item ul li {
+    background: none;
+    list-style: disc;
+    color: #000;
+    position: static;
+    width: auto !important;
+    padding: 0;
+    margin: 0 0 15px 50px;
+}
+
+body.conclusion #main #content #summary {
+    float: none;
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+
+body.conclusion #main #content #summary h1 {
+    font-family: Arial;
+    margin: 0 0 30px;
+}
+
+body.conclusion #main #content #summary h2 {
+    border: 0;
+    padding: 0;
+    font-family: Arial;
+    color: #000000;
+    background: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+body.conclusion #main #content #summary h2 .r_tl {
+    left: -22px;
+}
+
+body.conclusion #main #content #summary h2 .r_bl {
+    left: -22px;
+}
+
+body.conclusion #main #content #summary ul {
+    margin: 0 0 30px 20px;
+    padding: 0;
+}
+
+body.conclusion #main #content #summary ul li {
+    background: none;
+    list-style: disc;
+    margin: 0 0 10px 0;
+    line-height: 1.4em;
+    padding: 0;
+    font-family: Arial;
+}
+
+body.conclusion #main #content #summary ul + blockquote {
+    padding: 0;
+    background: none;
+}
+
+body.conclusion #main #content #summary ul + blockquote ul {
+    margin: 0 0 30px 20px;
+    padding: 0;
+}
+
+body.conclusion #main #content #summary ul + blockquote ul li {
+    background: none;
+    list-style: disc;
+    margin: 0 0 10px 0;
+    line-height: 1.4em;
+    padding: 0;
+    font-family: Arial;
+}
+
+body.conclusion #mainbot {
+    display: none;
+}
+
+body.conclusion #footer {
+    display: block;
+    padding: 0;
+    width: 100%;
+}
+
+body.conclusion #footer ul {
+    display: none;
+}
+
+body.conclusion #footer * {
+    color: #000;
+}
